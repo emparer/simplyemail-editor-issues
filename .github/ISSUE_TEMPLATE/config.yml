@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: SimplyEmail editor help
+    url: https://simplyemail.vercel.app/help
+    about: Read export instructions and common troubleshooting steps.

@@ -1,0 +1,39 @@
+name: Editor feature request
+description: Suggest an improvement to the SimplyEmail editor.
+title: '[Editor feature] '
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        This tracker is for the SimplyEmail editor. Reports are public: use sample content and remove customer
+        details, private email content, passwords and tokens before posting.
+  - type: textarea
+    id: need
+    attributes:
+      label: What are you trying to do?
+      description: Describe the editor task and what currently gets in the way.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Describe how the editor could help.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Current workaround or alternatives
+      description: Optional.
+    validations:
+      required: false
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or mockups
+      description: Optional; use sample content only.
+    validations:
+      required: false

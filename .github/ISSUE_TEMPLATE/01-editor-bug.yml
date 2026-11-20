@@ -1,0 +1,133 @@
+name: Editor bug report
+description: Report a problem with the SimplyEmail email editor.
+title: '[Editor bug] '
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        This tracker is for the SimplyEmail editor. Reports are public: use sample content and remove customer
+        details, private email content, passwords and tokens before posting.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Editor area
+      description: Choose the closest match.
+      options:
+        - Selection, zoom or canvas scrolling
+        - Text and formatting
+        - Blocks and columns
+        - Images, borders or colors
+        - HTML or MJML import
+        - Export or received email formatting
+        - Saving or opening editor projects
+        - Other editor behavior
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Describe the editor problem.
+      placeholder: Clicking Fit the area leaves the email below the canvas top.
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Give the shortest sequence that triggers the problem.
+      placeholder: |-
+        1. Open the editor
+        2. Add a text block
+        3. Choose Zoom → Fit the area
+        4. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen?
+      description: Describe the result you expected.
+    validations:
+      required: true
+  - type: dropdown
+    id: browser
+    attributes:
+      label: Browser
+      description: Which browser were you using?
+      options:
+        - Safari
+        - Chrome
+        - Firefox
+        - Microsoft Edge
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: browser-version
+    attributes:
+      label: Browser version
+      description: If known; find it in the browser’s About window.
+    validations:
+      required: false
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      description: Which device were you using?
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - iOS or iPadOS
+        - Android
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: Operating system version
+      description: Optional, if known.
+    validations:
+      required: false
+  - type: dropdown
+    id: export
+    attributes:
+      label: Export format
+      description: For problems with an exported or received email.
+      options:
+        - Not an export problem
+        - HTML
+        - MJML
+        - Outlook for Windows (.oft)
+        - Outlook for Mac (.emltpl)
+        - Email message (.eml)
+        - PDF
+    validations:
+      required: false
+  - type: textarea
+    id: sending
+    attributes:
+      label: How was the export opened or sent?
+      description: 'For export problems: name the sending and receiving apps and describe the workflow.'
+    validations:
+      required: false
+  - type: textarea
+    id: sample
+    attributes:
+      label: Screenshot or sample
+      description: Optional. Add a screenshot or a small example with fake content. Everything posted here is public.
+    validations:
+      required: false
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional details
+      description: >-
+        Optional: browser zoom, editor zoom, email width, error message, or whether it also happens in a new
+        blank email.
+    validations:
+      required: false
